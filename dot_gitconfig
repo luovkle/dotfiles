@@ -1,0 +1,9 @@
+[alias]
+	sb = status -sb
+	odag = log --oneline --decorate --all --graph
+	odags = log --oneline --decorate --all --graph --stat
+[core]
+	editor = nvim
+	pager = cat
+[init]
+    defaultBranch = main

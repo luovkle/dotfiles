@@ -1,0 +1,9 @@
+# editor
+export EDITOR=/usr/bin/nvim
+
+# npm
+PATH="$HOME/.local/bin:$PATH"
+export npm_config_prefix="$HOME/.local"
+
+# qt
+export QT_QPA_PLATFORMTHEME="qt5ct"

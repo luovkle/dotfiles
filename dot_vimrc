@@ -1,0 +1,49 @@
+" Plugins
+call plug#begin('~/.vim/plugged')
+    Plug 'junegunn/goyo.vim'
+    Plug 'cocopon/iceberg.vim'
+    Plug 'sheerun/vim-polyglot'
+call plug#end()
+
+" Iceberg (theme)
+syntax on
+set t_Co=256
+colorscheme iceberg
+set background=dark
+highlight LineNr guibg=bg
+highlight CursorLineNr guibg=bg
+hi VertSplit guibg=#1e2132
+set fillchars+=vert:\
+hi EndOfBuffer ctermfg=0 guifg=bg
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" Goyo
+set noruler
+function! s:goyo_enter()
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+endfunction
+function! s:goyo_leave()
+  " Quit Vim if this is the only remaining buffer
+  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+    if b:quitting_bang
+      qa!
+    else
+      qa
+    endif
+  endif
+endfunction
+autocmd! User GoyoEnter call <SID>goyo_enter()
+autocmd! User GoyoLeave call <SID>goyo_leave()
+let g:goyo_width = 81
+
+" Polyglot
+let g:python_highlight_space_errors = 0
+hi pythonFunctionCall guifg = fg
+hi pythonClass guifg = #e2a478
