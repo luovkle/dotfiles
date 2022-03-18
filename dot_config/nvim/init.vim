@@ -58,6 +58,7 @@ autocmd FileType css set tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType scss,sass set tabstop=2|set shiftwidth=2|set expandtab
 set foldmethod=manual
 hi Folded guibg=bg
+let g:netrw_banner=0
 
 " Floaterm
 hi Floaterm guibg=#161821
