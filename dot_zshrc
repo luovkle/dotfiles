@@ -48,6 +48,7 @@ alias matrix='unimatrix -s 96 -c cyan'
 alias musc='musikcube'
 alias slc='silicon'
 alias pwdc='fn() { echo -n "${PWD}/${1}" | xclip -selection clipboard }; fn'
+alias mkcd='fn() { mkdir $1 && cd $1 }; fn'
 
 ### HOOKS
 zshcache_time="$(date +%s%N)"
