@@ -49,6 +49,11 @@ alias musc='musikcube'
 alias slc='silicon'
 alias pwdc='fn() { echo -n "${PWD}/${1}" | xclip -selection clipboard }; fn'
 alias mkcd='fn() { mkdir $1 && cd $1 }; fn'
+alias updp='fn() {
+    docker run --name postgres --rm -d -p 5432:5432 -e POSTGRES_USER=$1 \
+    -e POSTGRES_PASSWORD=$2 -e POSTGRES_DB=$3 postgres
+}; fn'
+alias stdp='docker stop postgres'
 
 ### HOOKS
 zshcache_time="$(date +%s%N)"
