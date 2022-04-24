@@ -54,6 +54,11 @@ alias updp='fn() {
     -e POSTGRES_PASSWORD=$2 -e POSTGRES_DB=$3 postgres
 }; fn'
 alias stdp='docker stop postgres'
+alias updm='fn() {
+    docker run --name mariadb --rm -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=$1 \
+    -e MARIADB_USER=$2 -e MARIADB_PASSWORD=$3 -e MARIADB_DATABASE=$4 mariadb
+}; fn'
+alias stdm='docker stop mariadb'
 
 ### HOOKS
 zshcache_time="$(date +%s%N)"
