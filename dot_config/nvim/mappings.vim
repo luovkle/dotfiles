@@ -12,6 +12,8 @@ vnoremap <leader>y "+y
 nnoremap <C-c> <Esc>
 inoremap <C-c> <Esc>
 nnoremap <C-a> ggVG
+nmap <Leader>jj 10<C-e>
+nmap <Leader>kk 10<C-y>
 
 " FZF
 nmap <M-i> :Files<CR>
