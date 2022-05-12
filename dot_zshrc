@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/go/bin"
 export PIPENV_VENV_IN_PROJECT=1
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BAT_THEME="base16"
+export ZSH_TMUX_AUTOSTART=true
 
 ### PLUGINS
 plugins=(git tmux vi-mode)
