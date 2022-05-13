@@ -63,6 +63,7 @@ let g:netrw_banner=0
 " Floaterm
 hi Floaterm guibg=#161821
 hi FloatermBorder guibg=#161821 guifg=#6b7089
+let g:floaterm_autoclose=0
 let g:floaterm_title=''
 let g:floaterm_width=0.8
 let g:floaterm_height=0.8
