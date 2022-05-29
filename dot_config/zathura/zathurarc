@@ -9,7 +9,7 @@ set incremental-search true
 
 # Key bindings
 map u scroll half-up
-set d scroll half-down
+map d scroll half-down
 map D toggle_page_mode
 map K zoom in
 map J zoom out
