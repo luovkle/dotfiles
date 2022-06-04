@@ -10,7 +10,6 @@ source $ZSH/oh-my-zsh.sh
 ### ALIASES
 alias nv='nvim'
 alias snv='sudo -E nvim'
-alias vim='vim -c 'Goyo''
 alias py='python3 -q'
 alias pypy='pypy3 -q'
 alias bpy='bpython -q'

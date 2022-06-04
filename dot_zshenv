@@ -23,7 +23,7 @@ export PATH="$PATH:$HOME/go/bin"
 export BAT_THEME="base16"
 
 # man
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="/bin/sh -c \"col -b | /usr/share/vim/vim82/macros/less.sh -c 'set ft=man' -\""
 
 # minikube
 export MINIKUBE_IN_STYLE=false
