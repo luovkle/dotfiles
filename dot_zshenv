@@ -27,3 +27,6 @@ export MANPAGER="/bin/sh -c \"col -b | /usr/share/vim/vim82/macros/less.sh -c 's
 
 # minikube
 export MINIKUBE_IN_STYLE=false
+
+# nnn
+export NNN_TRASH=1
