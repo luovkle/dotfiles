@@ -13,6 +13,7 @@ local servers = {
   "taplo",
   "cssls",
   "tailwindcss",
+  "html"
 }
 
 for _, lsp in ipairs(servers) do

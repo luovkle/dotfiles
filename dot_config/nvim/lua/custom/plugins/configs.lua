@@ -62,6 +62,9 @@ M.mason = {
     -- toml
     "taplo",
 
+    -- html
+    "html-lsp",
+
     -- css
     "css-lsp",
     "tailwindcss",
