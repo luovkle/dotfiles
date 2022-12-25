@@ -62,6 +62,9 @@ M.mason = {
     -- toml
     "taplo",
 
+    -- css
+    "css-lsp",
+
     -- lua
     "lua-language-server",
     "stylua",

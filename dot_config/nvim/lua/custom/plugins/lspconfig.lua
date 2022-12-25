@@ -11,6 +11,7 @@ local servers = {
   "dockerls",
   "jsonls",
   "taplo",
+  "cssls",
 }
 
 for _, lsp in ipairs(servers) do
