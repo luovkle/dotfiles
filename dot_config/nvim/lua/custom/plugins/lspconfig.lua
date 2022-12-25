@@ -10,6 +10,7 @@ local servers = {
   "rust_analyzer",
   "dockerls",
   "jsonls",
+  "taplo",
 }
 
 for _, lsp in ipairs(servers) do

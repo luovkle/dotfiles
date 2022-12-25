@@ -59,6 +59,9 @@ M.mason = {
     -- json
     "jsonls",
 
+    -- toml
+    "taplo",
+
     -- lua
     "lua-language-server",
     "stylua",
