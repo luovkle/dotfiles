@@ -64,6 +64,7 @@ M.mason = {
 
     -- css
     "css-lsp",
+    "tailwindcss",
 
     -- lua
     "lua-language-server",

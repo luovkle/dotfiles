@@ -12,6 +12,7 @@ local servers = {
   "jsonls",
   "taplo",
   "cssls",
+  "tailwindcss",
 }
 
 for _, lsp in ipairs(servers) do
