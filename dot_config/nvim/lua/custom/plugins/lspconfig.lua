@@ -31,4 +31,9 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     root_dir = lspconfig.util.root_pattern("package.json"),
   }
+
+  lspconfig.tailwindcss.setup {
+    on_attach = on_attach,
+    root_dir = lspconfig.util.root_pattern("tailwind.config.cjs"),
+  }
 end
