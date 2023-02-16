@@ -2,6 +2,8 @@
 	sb = status -sb
 	odag = log --oneline --decorate --all --graph
 	odags = log --oneline --decorate --all --graph --stat
+	d = diff
+	ds = diff --staged
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
